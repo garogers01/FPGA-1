@@ -11,3 +11,4 @@ The switch box in our architecture was designed to route the signals in all the 
   <img style="width:100%" src="https://github.com/sarthakbp/FPGA-/blob/master/Images/Switchbox.jpg">
 </div>
 
+L0 can be connected to U0, R0 and D0 only, and so on for all the other data lines. The data flow in between the any two nodes is controlled by two D flip-flops which can be programmed at configuration time.So, for this architecture there will be 60 SRAM bits to configure.
