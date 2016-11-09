@@ -17,3 +17,6 @@ L0 can be connected to U0, R0 and D0 only, and so on for all the other data line
 
 The BLE or the basic logic element of an FPGA consists of an LUT(Look up table) , 2 multiplexers and a D flip-flop. The LUT in this design is a 4-input LUT as numerous studies have shown that empirically 4-input LUT performance is better than other options.LUT is made up of D-Flip Flops and stores the truth table values of the boolean function to be implemented.A 16X1 MUX selects the corresponding value and forwards it to the next part of the BLE.the next part of the BLE has a D-Flip Flop for storing states. However, an auxiliary connection is also provided to bypass the D Flip-Flop in order to implement combinational circuits.
 
+<div style="width:40%; margin:auto; margin-bottom:10px; margin-top:20px;">
+  <img style="width:100%" src="https://github.com/sarthakbp/FPGA-/blob/master/Images/CLB_block.jpg">
+</div> 
