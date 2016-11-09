@@ -12,3 +12,8 @@ The switch box in our architecture was designed to route the signals in all the 
 </div>
 
 L0 can be connected to U0, R0 and D0 only, and so on for all the other data lines. The data flow in between the any two nodes is controlled by two D flip-flops which can be programmed at configuration time.So, for this architecture there will be 60 SRAM bits to configure.
+
+#Logic Block
+
+The BLE or the basic logic element of an FPGA consists of an LUT(Look up table) , 2 multiplexers and a D flip-flop. The LUT in this design is a 4-input LUT as numerous studies have shown that empirically 4-input LUT performance is better than other options.LUT is made up of D-Flip Flops and stores the truth table values of the boolean function to be implemented.A 16X1 MUX selects the corresponding value and forwards it to the next part of the BLE.the next part of the BLE has a D-Flip Flop for storing states. However, an auxiliary connection is also provided to bypass the D Flip-Flop in order to implement combinational circuits.
+
