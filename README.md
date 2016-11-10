@@ -27,8 +27,12 @@ The BLE or the basic logic element of an FPGA consists of an LUT(Look up table) 
 
 
 A logic block can be connected directly to 4 other connection boxes. So in order to decide that the input is taken from any one direction, I have given the 4 inputs from four directions to a 4-input 4:1 mux and the select line is a part of Bit-stream config. Similarly the output can be given in a particular direction using a decoder.The input to this decoder again comes from the Bit-stream config. So the direction from which input is to be taken and the direction in which output is to be given has to be decided while configuring the FPGA
+
 #Connection Box
 
 <div style="width:40%; margin:auto; margin-bottom:10px; margin-top:20px;">
   <img style="width:100%" src="https://github.com/sarthakbp/FPGA/blob/master/Images/connectionbox.jpg">
 </div> 
+
+The connection box is connected to two Logic Blocks and switch boxes or I/O blocks. <br \>
+The connection box in our architecture consists of 35 SRAM bits which are used to connect each line of either of the logic blocks or both further to the switch boxes and are also used to provide input/output and output to logic units and IO box respectively. 
